@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(https://pictures.s3.yandex.net/frontend-developer/responsive/Inter-Regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(https://pictures.s3.yandex.net/frontend-developer/responsive/Inter-Bold.woff2);
+  font-weight: bold;
+}
+
+/* это не совсем по БЭМ, но в учебном проекте допустимо.
+В реальных условиях пишите margin: 0; внутри блоков */
+
+h1, h2, h3, h4, h5, h6, p, li {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+.page {
+  max-width: 1440px;
+  margin: auto;
+  font-family: 'Inter';
+}
+
+.header {
+  background-color: #000000;
+}
+
+.header__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cover {
+  min-height: calc(60vh - 60px);
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/responsive/cover.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 161px 0 98px;
+}
+
+.cover__container {
+  width: 90%;
+  margin: auto;
+}
+
+.cover__title {
+  font-size: 6rem;
+  line-height: 1;
+  max-width: 849px;
+}
+
+.cover__subtitle {
+  font-size: 1rem;
+  max-width: 610px;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+.content {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.content__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.content__column {
+  width: calc((100% - 70px)/3);
+}
+
+.content__column-image {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.content__column-image_hero_laika {
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/responsive/laika.png);
+}
+
+.content__column-image_hero_lunohod {
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/responsive/lunohod.jpg);
+}
+
+.content__column-image_hero_tesla {
+  background-image: url(https://pictures.s3.yandex.net/frontend-developer/responsive/tesla.png);
+}
+
+.content__column-title {
+  font-size: 30px;
+  margin: 37px 0 34px;
+}
+
+.column__text {
+  margin: 24px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.column__quote {
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 0;
+}
+
+.column__quote-cite {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.share__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 14px;
+}
+
+.share__icon {
+  text-decoration: none;
+  display: block;
+  margin-right: 6px;
+}
+
+.share__icon:last-of-type {
+  margin-right: 0;
+}
+
+.share__icon:hover {
+  opacity: .8;
+}
+.footer {
+  height: 60px;
+  background-color: #fff;
+}
+
+.footer__copyright {
+  width: 90%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 18px;
+}
